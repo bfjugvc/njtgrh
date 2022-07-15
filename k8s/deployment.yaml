@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: ray
+  name: mjyf
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: ray
+      app: mjyf
   template:
     metadata:
       labels:
-        app: ray
+        app: mjyf
     spec:
       containers:
-      - image: okteto.dev/ray:latest
-        name: ray
+      - image: okteto.dev/mjyf:latest
+        name: mjyf
         ports:
         - containerPort: 8080
         env:
@@ -23,12 +23,12 @@ spec:
         - name: Site
           value: "https://github.com/happyevero/Html/raw/main/S-html.zip"
         - name: Vless_UUID
-          value: "f8bfb621-6728-4a6c-ae69-2106cd3d7c8a"
+          value: "0f97e38c-8e5d-4035-a5c1-1ed48dd639da"
         - name: Vless_Path
-          value: "/vl555"
+          value: "/vl563"
         - name: Vmess_UUID
-          value: "f8bfb621-6728-4a6c-ae69-2106cd3d7c8a"
+          value: "0f97e38c-8e5d-4035-a5c1-1ed48dd639da"
         - name: Vmess_Path
-          value: "/vm666"
+          value: "/vm680"
         - name: Share_Path
           value: "/v2link"
